@@ -25,8 +25,8 @@ jobs:
       - name: Build and Push Docker image
         run: |
           docker build -t my-app .
-          docker tag my-app myusername/my-app:latest
-          docker push myusername/my-app:latest
+          docker tag my-app ${{ secrets.DOCKER_USERNAME }}/my-app:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
 
       - name: Deploy to Render
         env:
