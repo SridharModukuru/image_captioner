@@ -1,0 +1,5 @@
+google-generativeai
+requests
+Pillow
+matplotlib
+flask
