@@ -39,6 +39,6 @@ def process_image(api_key, model_name, images_folder):
         response_texts = [response.text for response in responses]
         return response_texts
     else:
-        return ["No image files found in the specified folder."]
+        return ["No image files found in the speciffied folder."]
 
 # print(process_image('AIzaSyBi_SLAuZ2jh9nDMLavLU12GwnRoZaczhY', 'gemini-pro-vision', r'C:\Users\Sridhar\.cache\image_captioner\files'))
